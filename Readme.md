@@ -1,4 +1,4 @@
-[Linner](https://linner.vercel.app) is an opinionated timeline component for React. You can read more about why and how it was built [here](https://medium.com/@aminahmadydeveloper/building-a-timeline-component-7c26df4445e6).
+[Linner](https://linner-docs.vercel.app/) is an opinionated timeline component for React. You can read more about why and how it was built [here](https://medium.com/@aminahmadydeveloper/building-a-timeline-component-7c26df4445e6).
 
 ## Usage
 
@@ -18,20 +18,20 @@ const times = [
   {
     title: 'Amin Ahmady',
     description: '...',
-    data: {
+    date: {
       from: 'December 1',
       to: 'now',
     },
-    iconVariant="PlusIcon"
+    iconVariant:"PlusIcon"
   },
   {
     title: 'Shadcn',
     description: '...',
-    data: {
+    date: {
       from: 'November 1',
       to: 'now',
     },
-    iconVariant="CheckIcon"
+    iconVariant:"CheckedIcon"
   },
 ];
 
@@ -54,4 +54,4 @@ function App() {
 
 ## Documentation
 
-You can find out more about the API and implementation in the [Documentation](https://linner.vercel.app/getting-started).
+You can find out more about the API and implementation in the [Documentation](https://linner-docs.vercel.app//getting-started).

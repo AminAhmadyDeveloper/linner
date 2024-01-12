@@ -1,6 +1,6 @@
 {
   "name": "linner",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "An opinionated timeline component for React.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -41,7 +41,7 @@
     "url": "https://aminahmady.vercel.app"
   },
   "license": "MIT",
-  "homepage": "https://linner.vercel.app",
+  "homepage": "https://linner-docs.vercel.app/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AminAhmadyDeveloper/linner.git"
