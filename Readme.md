@@ -9,16 +9,44 @@ npm install linner
 ```
 
 Add `<Linner />` to your page, it will be the place a timeline for you, that simple!
-After that you can see props and customize your time line as you like.
+After that you can add `<LinnerTime />` as children and see props and customize your time line as you like.
 
 ```jsx
-import { Linner } from 'linner';
-import { times } from 'data/times';
+import { Linner, LinnerTime } from 'linner';
+
+const times = [
+  {
+    title: 'Amin Ahmady',
+    description: '...',
+    data: {
+      from: 'December 1',
+      to: 'now',
+    },
+    iconVariant="PlusIcon"
+  },
+  {
+    title: 'Shadcn',
+    description: '...',
+    data: {
+      from: 'November 1',
+      to: 'now',
+    },
+    iconVariant="CheckIcon"
+  },
+];
 
 function App() {
   return (
     <div>
-      <Linner times={[...times]} />
+      <Linner>
+        {times.map(time => (
+          <LinnerTime
+            key={time.title}
+            variant="default"
+            {...time}
+          />
+        ))}
+      </Linner>
     </div>
   );
 }
