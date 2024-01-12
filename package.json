@@ -1,6 +1,6 @@
 {
   "name": "linner",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "An opinionated timeline component for React.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
