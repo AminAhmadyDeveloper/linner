@@ -1,0 +1,74 @@
+:root {
+  --primary-linner: 222.2 47.4% 11.2%;
+  --muted-linner: 220 14.3% 95.9%;
+  --muted-foreground-linner: 220 8.9% 46.1%;
+}
+
+:root.dark {
+  --primary-linner: 210 40% 98%;
+  --muted-linner: 215 27.9% 16.9%;
+  --muted-foreground-linner: 217.9 10.6% 64.9%;
+}
+
+.linner {
+  position: relative;
+  border-left-width: 1px;
+  padding-top: 0.75rem;
+}
+
+.linner-time {
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.linner-time-dot {
+  position: absolute;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: hsl(var(--muted-linner));
+  border-radius: 9999px;
+  margin-top: 0.25rem;
+  left: -0.4rem;
+  border-width: 1px;
+}
+
+.linner-time-icon {
+  margin-right: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.linner-time-title {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: hsl(var(--primary-linner));
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.linner-time-subtitle {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: hsl(var(--muted-foreground-linner));
+  font-weight: 400;
+}
+
+.linner-default-time-dates {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.linner-default-time-dates > time {
+  margin-bottom: 0.20rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+  color: hsl(var(--muted-foreground-linner));
+}
+
+.linner-headless {
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+}
